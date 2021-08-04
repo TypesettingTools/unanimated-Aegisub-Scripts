@@ -2,8 +2,8 @@
   "dependencyControlFeedFormatVersion": "0.2.0",
   "name": "unanimated's Automation Scripts",
   "description": "Secondary repository for most of unanimated's automation scripts.",
-  "baseUrl": "https://github.com/unanimated/luaegisub",
-  "fileBaseUrl": "https://raw.githubusercontent.com/unanimated/luaegisub/@{channel}/@{namespace}",
+  "baseUrl": "https://github.com/TypesettingTools/unanimated-Aegisub-Scripts",
+  "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/@{channel}/@{namespace}",
   "url": "@{baseUrl}",
   "maintainer": "unanimated",
   "macros": {
