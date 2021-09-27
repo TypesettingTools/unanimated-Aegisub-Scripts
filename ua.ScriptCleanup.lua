@@ -3,13 +3,12 @@
 script_name="Script Cleanup"
 script_description="Garbage disposal and elimination of incriminating evidence"
 script_author="unanimated"
-script_version="5.0"
+script_version="5.0.1"
 script_namespace="ua.ScriptCleanup"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="5.0.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 dont_delete_empty_tags=false	-- option to not delete {}
@@ -726,8 +725,8 @@ GUI={
 {x=8,y=12,height=2,class="checkbox",name="hidline",label="hide\ninline",hint='Hide ALL inline tags'},
 }
 	P,res=ADD(GUI,
-	{"Run selected","Comments","Tags","Dial 5","Clean Tags","^ Kill Tags","Hide Tags","Cancer"},{ok='Run selected',cancel='Cancer'})
-	if P=="Cancer" then ak() end
+	{"Run selected","Comments","Tags","Dial 5","Clean Tags","^ Kill Tags","Hide Tags","Cancel"},{ok='Run selected',cancel='Cancel'})
+	if P=="Cancel" then ak() end
 	if P=="^ Kill Tags" then killemall(subs,sel) end
 	if P=="Hide Tags" then hide_tags(subs,sel) end
 	if P=="Comments" then res.nocom=true cleanlines(subs,sel) end
