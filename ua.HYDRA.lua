@@ -4,14 +4,14 @@ script_name="HYDRA"
 script_description="A multi-headed typesetting beast. Scary as Hell."
 script_author="unanimated"
 script_url1="http://unanimated.hostfree.pw/ts/hydra.lua"
-script_url2="https://raw.githubusercontent.com/unanimated/luaegisub/master/hydra.lua"
+script_url2="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/hydra.lua"
 script_version="6.1"
 script_namespace="ua.HYDRA"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
 	script_version="6.1.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 re=require'aegisub.re'

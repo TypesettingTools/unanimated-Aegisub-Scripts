@@ -2,8 +2,8 @@
   "dependencyControlFeedFormatVersion": "0.2.0",
   "name": "unanimated's Automation Scripts",
   "description": "Secondary repository for most of unanimated's automation scripts.",
-  "baseUrl": "https://github.com/unanimated/luaegisub",
-  "fileBaseUrl": "https://raw.githubusercontent.com/unanimated/luaegisub/@{channel}/@{namespace}",
+  "baseUrl": "https://github.com/TypesettingTools/unanimated-Aegisub-Scripts",
+  "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/@{channel}/@{namespace}",
   "url": "@{baseUrl}",
   "maintainer": "unanimated",
   "macros": {
@@ -497,19 +497,20 @@
       "description": "Copy and Fax Things. Occasionally perform a necroscopy.",
       "channels": {
         "master": {
-          "version": "4.1.0",
-          "released": "2018-06-24",
+          "version": "4.1.1",
+          "released": "2021-08-04",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "b25234859bc304d941b4c0a70a38345f11a55a21"
+              "sha1": "f6847e0573a6396c619d19346850b381038e7da0"
             }
           ]
         }
       },
       "changelog": {
+        "4.1.1": ["Assign mark before using it"],
         "4.1.0": ["Check the Updates page"]
       }
     },
