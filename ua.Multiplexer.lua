@@ -380,12 +380,11 @@
 script_name="Multiplexer"
 script_description="Muxes stuff using mkvmerge"
 script_author="unanimated"
-script_version="1.1"
+script_version="1.1.1"
 script_namespace="ua.Multiplexer"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-  script_version="1.1.0"
   depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 

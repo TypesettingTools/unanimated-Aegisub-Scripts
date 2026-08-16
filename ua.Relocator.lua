@@ -5,13 +5,12 @@ script_name="Hyperdimensional Relocator"
 script_description="Advanced metamorphosis of multidimensional coordinates"
 script_author="reanimated"
 script_url="http://unanimated.hostfree.pw/ts/relocator.lua"
-script_version="4.5.2"
+script_version="4.5.3"
 script_namespace="ua.Relocator"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="4.5.2"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 re=require'aegisub.re'

@@ -18,12 +18,11 @@ script_name="Blur and Glow"
 script_description="Add blur and/or glow to signs"
 script_author="unanimated"
 script_url="http://unanimated.xtreemhost.com/ts/blur-and-glow.lua"
-script_version="2.5"
+script_version="2.5.1"
 script_namespace="ua.BlurAndGlow"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-  script_version="2.5.0"
   depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 

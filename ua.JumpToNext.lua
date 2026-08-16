@@ -7,12 +7,11 @@ script_name="Jump to Next"
 script_description="Jumps to next 'sign' in the subtitle grid"
 script_description2="Jumps to previous 'sign' in the subtitle grid"
 script_author="unanimated"
-script_version="2.0"
+script_version="2.0.1"
 script_namespace="ua.JumpToNext"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-  script_version="2.0.0"
   depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 

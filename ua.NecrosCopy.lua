@@ -1,13 +1,12 @@
 script_name="NecrosCopy"
 script_description="Copy and fax things in the shadows while lines are splitting and breaking"
 script_author="reanimated"
-script_version="4.1"
+script_version="4.1.1"
 script_namespace="ua.NecrosCopy"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="4.1.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 re=require'aegisub.re'
@@ -589,6 +588,7 @@ function splitbreak(subs,sel)
 				},{"Spaces","Tags","Marker","Skip","Cancel"},{close='Cancel'})
 			end
 			if P=="Cancel" then ak() end
+			breakit=false nmbr=rez.num mark=rez.mark
 			text=text:gsub("\\N","")
 			if P=="Spaces" then text=textreplace(text," "," \\N") end
 			if P=="Tags" then
@@ -602,7 +602,6 @@ function splitbreak(subs,sel)
 				text=stags..after
 			end
 			if rez.remember then applytoall=P end
-			breakit=false nmbr=rez.num mark=rez.mark
 			text=text:gsub("({\\[^}]*}) *\\N","\\N%1")
 		end
 	

@@ -1,13 +1,12 @@
 script_name="FadeWorkS"
 script_description="Makes pictograph overlays fade in and out of existence"
 script_author="unanimated"
-script_version="5.0"
-script_namespace="ua.Fadeworks"
+script_version="5.0.2"
+script_namespace="ua.FadeWorks"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="5.0.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 re=require'aegisub.re'
@@ -490,12 +489,12 @@ function koko_da(subs,sel)
 	if not res.word then
 		matches=re.find(text,"[\\w[:punct:]][\\s\\\\*]*")
 		len=#matches
-		if fadin>=40 then ko=round(fadin/(len-1))/10 else ko=fadin end
+		if fadin>=40 then ko=round(fadin/len)/10 else ko=fadin end
 		text=re.sub(text,"([\\w[:punct:]])","{\\\\ko"..ko.."}\\1")
 	else	--word
 		matches=re.find(text,"[\\w[:punct:]]+[\\s\\\\*]*")
 		len=#matches
-		if fadin>=40 then ko=round(fadin/(len-1)/10) else ko=fadin end
+		if fadin>=40 then ko=round(fadin/len/10) else ko=fadin end
 		text=re.sub(text,"([\\w[:punct:]]+)","{\\\\ko"..ko.."}\\1")
 	end
 

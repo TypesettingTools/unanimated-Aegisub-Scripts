@@ -1,9 +1,9 @@
-﻿{
+{
   "dependencyControlFeedFormatVersion": "0.2.0",
   "name": "unanimated's Automation Scripts",
   "description": "Secondary repository for most of unanimated's automation scripts.",
-  "baseUrl": "https://github.com/unanimated/luaegisub",
-  "fileBaseUrl": "https://raw.githubusercontent.com/unanimated/luaegisub/@{channel}/@{namespace}",
+  "baseUrl": "https://github.com/TypesettingTools/unanimated-Aegisub-Scripts",
+  "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/@{channel}/@{namespace}",
   "url": "@{baseUrl}",
   "maintainer": "unanimated",
   "macros": {
@@ -15,20 +15,21 @@
       "description": "Cycles blur, border, shadow, alpha, etc.",
       "channels": {
         "master": {
-          "version": "2.0.0",
-          "released": "2018-06-10",
+          "version": "2.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "a6609d07ecc9738c85f1c91e58d3e0592763e425"
+              "sha1": "1381d1d6cf582d7887582389c1e7a71e309b16e6"
             }
           ]
         }
       },
       "changelog": {
-        "2.0.0": ["Check the Updates page"]
+        "2.0.0": ["Check the Updates page"],
+        "2.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -39,20 +40,21 @@
       "description": "Italy Bold Under Strike",
       "channels": {
         "master": {
-          "version": "1.7.0",
-          "released": "2015-06-01",
+          "version": "1.7.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "b28cfc2d78584c1acaa2a22f170e9049b56dfe60"
+              "sha1": "688f4fa8f9575c6e0321b97147acd21993f39cb2"
             }
           ]
         }
       },
       "changelog": {
-        "1.7.0": ["merged Italics and Bold scripts and added Underline and Strikeout; added DependencyControl"]
+        "1.7.0": ["merged Italics and Bold scripts and added Underline and Strikeout; added DependencyControl"],
+        "1.7.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -63,20 +65,21 @@
       "description": "insert/shift linebreaks",
       "channels": {
         "master": {
-          "version": "2.4.0",
-          "released": "2018-06-24",
+          "version": "2.4.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "90ef136b00345ee52c448054e52a0b1baeb149d5"
+              "sha1": "24c02a8aab629f27072658569de7fe880e6f7067"
             }
           ]
         }
       },
       "changelog": {
-        "2.4.0": ["Check the Updates page"]
+        "2.4.0": ["Check the Updates page"],
+        "2.4.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -87,21 +90,22 @@
       "description": "Joins lines / splits lines / snaps to keyframes",
       "channels": {
         "master": {
-          "version": "1.2.0",
-          "released": "2015-06-20",
+          "version": "1.2.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "8fcc18612dd519088092309db8fc11cbbe29b97e"
+              "sha1": "a77565ccef8d9e7c3eedb889a4811da06f258ec9"
             }
           ]
         }
       },
       "changelog": {
+        "1.1.0": ["merged all three for convenience; changed how Join works; added DependencyControl"],
         "1.2.0": ["improved snapping to adjacent lines"],
-        "1.1.0": ["merged all three for convenience; changed how Join works; added DependencyControl"]
+        "1.2.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -112,21 +116,22 @@
       "description": "Jumps to next 'sign' in the subtitle grid",
       "channels": {
         "master": {
-          "version": "2.0.0",
-          "released": "2015-06-01",
+          "version": "2.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "3befd2d8adca2d5fdfd93c30cbdfa770e258b4c2"
+              "sha1": "4fc6ab952bd051eba2a5de9cba14399b10831dc3"
             }
           ]
         }
       },
       "changelog": {
+        "1.3.0": ["Added DependencyControl"],
         "2.0.0": ["13 macros; Text/Style/Actor/Effect/Layer/CommentedLine x Next/Previous = 12 hotkeys + 1 for GUI version with all 12 options"],
-	"1.3.0": ["Added DependencyControl"]
+        "2.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -137,20 +142,21 @@
       "description": "Removes selected stuff from script",
       "channels": {
         "master": {
-          "version": "5.0.0",
-          "released": "2018-06-10",
+          "version": "5.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "43addccdac9a6a7bc85ded9450075edb767df5f3"
+              "sha1": "bb0207d66c83291c97ff538ceb5958d73161eb9e"
             }
           ]
         }
       },
       "changelog": {
-        "5.0.0": ["Check the Updates page"]
+        "5.0.0": ["Check the Updates page"],
+        "5.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -161,20 +167,21 @@
       "description": "Adds blur and/or glow to signs",
       "channels": {
         "master": {
-          "version": "2.5.0",
-          "released": "2015-06-01",
+          "version": "2.5.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "0cd79d224b84cca58ae1b201b36658536d635a10"
+              "sha1": "2871bc0e2b8ee05a96c3561827c3870d6dc5474e"
             }
           ]
         }
       },
       "changelog": {
-        "2.5.0": ["default blur part of config; cleaned up the code a bit; added DespondencyControl"]
+        "2.5.0": ["default blur part of config; cleaned up the code a bit; added DespondencyControl"],
+        "2.5.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -185,20 +192,21 @@
       "description": "A multi-headed typesetting tool",
       "channels": {
         "master": {
-          "version": "6.1.0",
-          "released": "2018-08-05",
+          "version": "6.1.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "60adc9eda4c235afa7fae3a19be48fa1d2246b60"
+              "sha1": "7bd78f7251afbd07399d139224374c3a15a7a0e1"
             }
           ]
         }
       },
       "changelog": {
-        "6.1.0": ["Check the Updates page"]
+        "6.1.0": ["Check the Updates page"],
+        "6.1.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -209,22 +217,23 @@
       "description": "Advanced metamorphosis of multidimensional coordinates",
       "channels": {
         "master": {
-          "version": "4.5.2",
-          "released": "2022-04-24",
+          "version": "4.5.3",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "e7a4e9f28363aa2deb27c3eab112dbd7d2d1ac73"
+              "sha1": "f40cb424dedd70e79fe3fb813b5ca63af60a174f"
             }
           ]
         }
       },
       "changelog": {
-	"4.5.2": ["Follow user defined rounding for vector clips"],
+        "4.5.0": ["Check the Updates page"],
         "4.5.1": ["Support for subpixel vector clips"],
-        "4.5.0": ["Check the Updates page"]
+        "4.5.2": ["Follow user defined rounding for vector clips"],
+        "4.5.3": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -235,20 +244,21 @@
       "description": "recalculates things",
       "channels": {
         "master": {
-          "version": "4.0.0",
-          "released": "2018-05-13",
+          "version": "4.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "5aefde4e05f278f37d6956fc36ab03da4ffb59ab"
+              "sha1": "b1ad5b202dbf5d3eb92c8d545ae66dd04d41b824"
             }
           ]
         }
       },
       "changelog": {
-        "4.0.0": ["Check the Updates page"]
+        "4.0.0": ["Check the Updates page"],
+        "4.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -259,20 +269,24 @@
       "description": "Does things with colours",
       "channels": {
         "master": {
-          "version": "5.0.0",
-          "released": "2018-06-10",
+          "version": "5.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "80d932bfc186761914cc56a1ecae685cfde2af26"
+              "sha1": "198ca530522307a5461301e08f0451d2537db889"
             }
           ]
         }
       },
       "changelog": {
-        "4.5.0": ["Check the Updates page"]
+        "4.5.0": ["Check the Updates page"],
+        "5.0.1": [
+          "Move to TypesettingTools repository",
+          "Change script_namespace to ua.Colorize"
+        ]
       }
     },
     
@@ -283,20 +297,21 @@
       "description": "Selectricks and Sortricks",
       "channels": {
         "master": {
-          "version": "3.4.0",
-          "released": "2018-08-05",
+          "version": "3.4.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "ab007be53835586317f779874b1d5f3af1c3f107"
+              "sha1": "a3891e5855847f68eeb4de8e53abf518af126196"
             }
           ]
         }
       },
       "changelog": {
-        "3.4.0": ["Check the Updates page"]
+        "3.4.0": ["Check the Updates page"],
+        "3.4.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -307,20 +322,21 @@
       "description": "Capitalises text or makes it lowercase / uppercase",
       "channels": {
         "master": {
-          "version": "3.0.0",
-          "released": "2015-06-01",
+          "version": "3.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "6f429be4c75ea4fa6f49481ba99a9eef437d2db7"
+              "sha1": "b35d43343652343fcf4f682c3044f5e73b6bc18e"
             }
           ]
         }
       },
       "changelog": {
-        "3.0.0": ["improved; added options; unicode support; added DespondencyControl"]
+        "3.0.0": ["improved; added options; unicode support; added DespondencyControl"],
+        "3.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -331,20 +347,21 @@
       "description": "Multi-Line Editor",
       "channels": {
         "master": {
-          "version": "1.8.0",
-          "released": "2018-05-13",
+          "version": "1.8.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "04bba9479f96bff8a19160183a0ab548d42031c3"
+              "sha1": "0bf75916a970620ca04837422570f22f68067eb4"
             }
           ]
         }
       },
       "changelog": {
-        "1.8.0": ["Check the Updates page"]
+        "1.8.0": ["Check the Updates page"],
+        "1.8.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -355,20 +372,21 @@
       "description": "Copy and paste just about anything from/to multiple lines",
       "channels": {
         "master": {
-          "version": "4.0.0",
-          "released": "2019-08-18",
+          "version": "4.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "eba606e5893845ddc2a6065bc4c1d11fadea38c8"
+              "sha1": "de65e04394a2031599e70cbde277ca65e972db9b"
             }
           ]
         }
       },
       "changelog": {
-        "4.0.0": ["Check the Updates page"]
+        "4.0.0": ["Check the Updates page"],
+        "4.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -379,20 +397,25 @@
       "description": "Works with Fades",
       "channels": {
         "master": {
-          "version": "5.0.0",
-          "released": "2019-08-18",
+          "version": "5.0.2",
+          "released": "2023-02-24",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "8eb5d146b2df485cc3fe211f07c25a9f02752d46"
+              "sha1": "7ac44d6c10d4cb916e8fa8ace3d967ae506cec2b"
             }
           ]
         }
       },
       "changelog": {
-        "5.0.0": ["Check the Updates page"]
+        "5.0.0": ["Check the Updates page"],
+        "5.0.1": [
+          "Move to TypesettingTools repository",
+          "Change script_namespace to ua.FadeWorks"
+        ],
+        "5.0.2": ["Fix off-by-one error for \\ko fades"]
       }
     },
     
@@ -403,20 +426,21 @@
       "description": "Import stuff, number stuff, chapter stuff, replace stuff, do a significant amount of other stuff to stuff.",
       "channels": {
         "master": {
-          "version": "3.5.0",
-          "released": "2019-08-18",
+          "version": "3.5.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "9e79c895d1578db74cc1fb6816c05b80eb85e1d5"
+              "sha1": "ae21070690f7fe13d1eb149305530bdd5d8ed452"
             }
           ]
         }
       },
       "changelog": {
-        "3.5.0": ["Check the Updates page"]
+        "3.5.0": ["Check the Updates page"],
+        "3.5.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -427,20 +451,21 @@
       "description": "Time Machine.",
       "channels": {
         "master": {
-          "version": "3.1.0",
-          "released": "2019-08-18",
+          "version": "3.1.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "a379c8f79b5db37e3eb3de5f505425b696621155"
+              "sha1": "c9f3f88bbf37e412e5813c8e8f0f9aa39aea233a"
             }
           ]
         }
       },
       "changelog": {
-        "3.1.0": ["Check the Updates page"]
+        "3.1.0": ["Check the Updates page"],
+        "3.1.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -451,20 +476,21 @@
       "description": "Rough-times signs from TS timecodes",
       "channels": {
         "master": {
-          "version": "2.8.0",
-          "released": "2015-05-28",
+          "version": "2.8.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "8e2a45a70f88cfa28abca22673e455dee95715d3"
+              "sha1": "3c27a47c343e99562fa86203b48b561a30a1a83a"
             }
           ]
         }
       },
       "changelog": {
-        "2.8.0": ["Added DespondencyControl"]
+        "2.8.0": ["Added DespondencyControl"],
+        "2.8.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -475,20 +501,21 @@
       "description": "Masquerade",
       "channels": {
         "master": {
-          "version": "3.0.0",
-          "released": "2018-06-10",
+          "version": "3.0.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "49b217a9706196222719ff25117907d8c9c08f07"
+              "sha1": "7bdd4391b4a190f38fe3137a321be347c84a1375"
             }
           ]
         }
       },
       "changelog": {
-        "3.0.0": ["Check the Updates page"]
+        "3.0.0": ["Check the Updates page"],
+        "3.0.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -499,20 +526,24 @@
       "description": "Copy and Fax Things. Occasionally perform a necroscopy.",
       "channels": {
         "master": {
-          "version": "4.1.0",
-          "released": "2018-06-24",
+          "version": "4.1.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "b25234859bc304d941b4c0a70a38345f11a55a21"
+              "sha1": "f6847e0573a6396c619d19346850b381038e7da0"
             }
           ]
         }
       },
       "changelog": {
-        "4.1.0": ["Check the Updates page"]
+        "4.1.0": ["Check the Updates page"],
+        "4.1.1": [
+          "Move to TypesettingTools repository",
+          "Fixed crash on splitting by marker"
+        ]
       }
     },
     
@@ -523,22 +554,23 @@
       "description": "Encode a clip with or without hardsubs",
       "channels": {
         "master": {
-          "version": "1.2.0",
-          "released": "2015-09-05",
+          "version": "1.2.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "865445160f3338da55f04a761e4dde819dbece37"
+              "sha1": "7fbbd67c2d5e9dbf0b6f7a75ae2c2bf5be22fb8e"
             }
           ]
         }
       },
       "changelog": {
-        "1.2.0": ["fixed an issue with the encode being deleted when not muxing audio; fixed some issues resulting from subtitles not being saved"],
+        "1.0.1": ["Added DespondencyControl"],
         "1.1.0": ["added option to mux the encode with audio"],
-        "1.0.1": ["Added DespondencyControl"]
+        "1.2.0": ["fixed an issue with the encode being deleted when not muxing audio; fixed some issues resulting from subtitles not being saved"],
+        "1.2.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -549,20 +581,21 @@
       "description": "Muxes stuff using mkvmerge",
       "channels": {
         "master": {
-          "version": "1.1.0",
-          "released": "2015-05-26",
+          "version": "1.1.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "1d1be8a1135c35a31b79947227e45072bea3d348"
+              "sha1": "d9061746dc8af60af12cd9e868c80428f48a4c4d"
             }
           ]
         }
       },
       "changelog": {
-        "1.1.0": ["Added DespondencyControl"]
+        "1.1.0": ["Added DespondencyControl"],
+        "1.1.1": ["Move to TypesettingTools repository"]
       }
     },
     
@@ -573,20 +606,21 @@
       "description": "Checks your shitty script and tells you how bad it is",
       "channels": {
         "master": {
-          "version": "2.9.0",
-          "released": "2015-05-25",
+          "version": "2.9.1",
+          "released": "2022-07-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "53d9190850b917eaec1ab6287a3423cc8eb5a959"
+              "sha1": "ed74ade7c6efbcf165fce55bd3d1f689c5ed648d"
             }
           ]
         }
       },
       "changelog": {
-        "2.9.0": ["Added DependencyControl"]
+        "2.9.0": ["Added DependencyControl"],
+        "2.9.1": ["Move to TypesettingTools repository"]
       }
     }
         

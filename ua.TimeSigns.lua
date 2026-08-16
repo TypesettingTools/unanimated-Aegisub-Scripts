@@ -5,12 +5,11 @@
 script_name="Time Signs"
 script_description="Rough-times signs from TS timecodes"
 script_author="unanimated"
-script_version="2.8"
+script_version="2.8.1"
 script_namespace="ua.TimeSigns"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-  script_version="2.8.0"
   depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 

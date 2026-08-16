@@ -3,13 +3,12 @@
 script_name="Multi-Line Editor"
 script_description="Multi-Line Editor"
 script_author="unanimated"
-script_version="1.8"
+script_version="1.8.1"
 script_namespace="ua.MultiLineEditor"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="1.8.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 re=require'aegisub.re'

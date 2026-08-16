@@ -29,12 +29,11 @@ kfea=15		-- ends after
 script_name="Join / Split / Snap"
 script_description="Joins lines / splits lines / snaps to keyframes"
 script_author="unanimated"
-script_version="1.2"
+script_version="1.2.1"
 script_namespace="ua.JoinSplitSnap"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-  script_version="1.2.0"
   depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 

@@ -1,13 +1,12 @@
 script_name="Significance"
 script_description="Import stuff, number stuff, chapter stuff, replace stuff, do a significant amount of other stuff to stuff."
 script_author="unanimated"
-script_version="3.5"
+script_version="3.5.1"
 script_namespace="ua.Significance"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="3.5.0"
-	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
+	depRec=DependencyControl{feed="https://raw.githubusercontent.com/TypesettingTools/unanimated-Aegisub-Scripts/master/DependencyControl.json"}
 end
 
 clipboard=require("aegisub.clipboard")
