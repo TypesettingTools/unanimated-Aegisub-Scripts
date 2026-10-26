@@ -137,19 +137,20 @@
       "description": "Removes selected stuff from script",
       "channels": {
         "master": {
-          "version": "5.0.0",
-          "released": "2018-06-10",
+          "version": "5.0.1",
+          "released": "2026-10-26",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "43addccdac9a6a7bc85ded9450075edb767df5f3"
+              "sha1": "cdef863c8e07188d34ce0e60d0d13de328017bbc"
             }
           ]
         }
       },
       "changelog": {
+        "5.0.1": ["Fix bold tag removal to support font weights."],
         "5.0.0": ["Check the Updates page"]
       }
     },

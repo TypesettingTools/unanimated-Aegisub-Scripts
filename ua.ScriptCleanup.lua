@@ -3,12 +3,12 @@
 script_name="Script Cleanup"
 script_description="Garbage disposal and elimination of incriminating evidence"
 script_author="unanimated"
-script_version="5.0"
+script_version="5.0.1"
 script_namespace="ua.ScriptCleanup"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-	script_version="5.0.0"
+	script_version="5.0.1"
 	depRec=DependencyControl{feed="https://raw.githubusercontent.com/unanimated/luaegisub/master/DependencyControl.json"}
 end
 
@@ -313,7 +313,7 @@ function killemall(subs,sel)
 	if res["return"] then trgt=trgt:gsub("\\r.+([\\}])","%1") end
 	if res.kara then trgt=trgt:gsub("\\[Kk][fo]?[%d%.]+([\\}])","%1") end
 	if res.ital then repeat trgt,r=trgt:gsub("\\i[01]?([\\}])","%1") until r==0 end
-	if res.bold then repeat trgt,r=trgt:gsub("\\b[01]?([\\}])","%1") until r==0 end
+	if res.bold then repeat trgt,r=trgt:gsub("\\b%d*([\\}])","%1") until r==0 end
 	if res.under then repeat trgt,r=trgt:gsub("\\u[01]?([\\}])","%1") until r==0 end
 	if res.stri then repeat trgt,r=trgt:gsub("\\s[01]?([\\}])","%1") until r==0 end
 	if res.trans then trgt=trgt:gsub("\\t%b()","") end
